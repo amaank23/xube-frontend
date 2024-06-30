@@ -1,19 +1,24 @@
-import CheckOptions from "./helpers/CheckOptions";
-import CurrentPrintJobs from "./helpers/CurrentPrintJobs";
-import Properties from "./helpers/Properties";
+import { Link, Route, Routes } from "react-router-dom";
+import PrintSettings from "./PrintSettings";
+import Materials from "./Materials";
 
 const Index = () => {
   return (
     <div className="w-full h-full">
-      <div className="flex">
-        <div className="w-[20%]">
-          <Properties />
-        </div>
-        <div className="w-[80%] px-6">
-          <CurrentPrintJobs />
-        </div>
+      <div className="h-[90%]">
+        <Routes>
+          <Route path="print-settings" element={<PrintSettings />} />
+          <Route path="materials" element={<Materials />} />
+        </Routes>
       </div>
-      <CheckOptions />
+      <div className="h-[10%] flex justify-between items-center bg-primary px-12">
+        <Link to={"/controls/print-settings"} className="text-3xl text-white">
+          Print Settings
+        </Link>
+        <Link to={"/controls/materials"} className="text-3xl text-white">
+          Materials
+        </Link>
+      </div>
     </div>
   );
 };

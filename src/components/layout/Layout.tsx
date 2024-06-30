@@ -17,7 +17,7 @@ const Layout: React.FC<ILayout> = ({ children }) => {
         <Link to={"/"}>
           <IoHomeSharp size={65} color="white" />
         </Link>
-        <Link to={"/controls"}>
+        <Link to={"/controls/print-settings"}>
           <AiFillControl size={65} color="white" />
         </Link>
         <Link to={"/folders"}>
