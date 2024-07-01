@@ -44,8 +44,8 @@ const Properties = () => {
           onClick={openKeyboard}
         >
           <div className="flex flex-col justify-center items-center">
-            <span className="text-2xl text-black font-bold">Xolo One</span>
-            <span className="text-xl text-black">Material</span>
+            <span className="text-2xl text-black font-bold">2</span>
+            <span className="text-xl text-black">Z Dist.</span>
           </div>
         </div>
       </div>
